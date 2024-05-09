@@ -4,6 +4,16 @@ function followlakmal_theme_support(){
 add_theme_support('title-tag');
 }
 
+function followlakmal_menus(){
+    $locations = array(
+        'primary' => "Desktop Primary Left Sidebar",
+        'footer' => "Footer Menu Items"
+    );
+
+    register_nav_menus($locations);
+}
+
+add_action('init', 'followlakmal_menus');
 add_action('after_setup_theme', 'followlakmal_theme_support');
 function followlakmal_register_styles(){
     $version = wp_get_theme()->get('Version');
