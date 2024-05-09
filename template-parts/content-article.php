@@ -9,9 +9,13 @@
 			<span class="comment"><a href="#comments"><i class='fa fa-comment'></i> <?php comments_number() ?></a></span>
 		</div>
 	</header>
+	<?php
+	the_content()
+	?>
+
+
+
+	<?php
+	comments_template()
+	?>
 </div>
-
-
-<?php
-the_content()
-?>
