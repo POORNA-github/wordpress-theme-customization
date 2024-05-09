@@ -2,6 +2,7 @@
 function followlakmal_theme_support(){
 //adds dynamic title
 add_theme_support('title-tag');
+add_theme_support('custom-logo');
 }
 
 function followlakmal_menus(){
