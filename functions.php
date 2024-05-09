@@ -1,5 +1,10 @@
 <?php
+function followlakmal_theme_support(){
+//adds dynamic title
+add_theme_support('title-tag');
+}
 
+add_action('after_setup_theme', 'followlakmal_theme_support');
 function followlakmal_register_styles(){
     $version = wp_get_theme()->get('Version');
     wp_enqueue_style('followlakmal_style', get_template_directory_uri() . '/style.css', array('followlakmal_bootstrap'), $version , 'all');
